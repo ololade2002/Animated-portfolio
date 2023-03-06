@@ -19,10 +19,10 @@ const Navbar = () => {
         setMobile(false)}>
             <ul className={mobile ? 'navLink-mobile' : 'navLink'} 
             onClick={()=>setMobile(false)}>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Casting</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/work">Works</a></li>
+                <li><a href="/cast">Casting</a></li>
             </ul>
 
             <div  className={mobile ? 'btn-mobile' : 'btn-d'} onClick={()=>setMobile(false)}>
