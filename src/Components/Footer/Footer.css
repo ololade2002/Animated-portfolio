@@ -1,0 +1,28 @@
+
+
+.footer {
+    padding: 5rem 0rem 0rem 0rem;
+    margin-top: 37.5rem; 
+}
+.footer-body {
+    padding: 2rem 3rem;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-body>button {
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+

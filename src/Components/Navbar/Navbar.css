@@ -1,0 +1,150 @@
+
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+nav {
+    padding: 0.5rem 3rem 0rem 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    position: relative;
+    background-color: #141414;
+    z-index: 15;
+    width: 100vw;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.navbar>span {
+    height: 2px;
+    width: 50px;
+    background: linear-gradient(90deg , transparent , #fff);
+    position: absolute;
+    bottom: 0;
+    animation: light 5s  infinite linear;
+}
+
+@keyframes light {
+    0% {
+        transform: translateX(-100%);
+        left: 0;
+    }
+    100% {
+        left: 100%;
+        transform: translateX(0%);
+    }
+}
+.logo {
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-family: w;
+    width: 30%;
+   
+}
+.navbar>.Link {
+    display: flex;
+    width: 70%;
+ 
+    justify-content: space-between;
+
+}
+.navbar>div:nth-of-type(2)>.navLink {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    gap: 4rem;
+    transform: translateY(.7rem);
+}
+
+.navbar>div:nth-of-type(2)>.navLink>li {
+    list-style: none;
+  
+}
+.navbar>div:nth-of-type(2)>.navLink>li>a {
+text-decoration: none;
+font-size: 1rem;
+font-weight: 200;
+font-family: 'Poppins', sans-serif;
+color: #fff;
+}
+.btn1 {
+    background: transparent;
+  border: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+.menu {
+    border: none;
+    background: none;
+    color: white;
+    display: none;
+}
+.btn-mobile {
+    display: none;
+}
+.btn-d {
+    display: flex;
+}
+
+
+@media screen and (max-width:992px) {
+    nav {
+        padding: 0.5rem 1.5rem 0rem 1.5rem;
+    }
+    .menu {
+        display: block;
+    }
+    .menu>svg {
+        font-size: 2rem;
+    }
+    .navbar>.Link {
+        display: none;
+    }
+   
+.navbar>.mobileLink {
+    background-color: #141414;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4.5rem;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    height: 90vh;
+}
+.navLink-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.navLink-mobile>li {
+    list-style: none;
+}
+.navLink-mobile>li>a {
+    text-decoration: none;
+font-size: 1rem;
+font-weight: 400;
+align-items: center;
+font-family: 'Poppins', sans-serif;
+color: #fff;
+}
+.btn-mobile {
+    display: flex;
+}
+}
+
